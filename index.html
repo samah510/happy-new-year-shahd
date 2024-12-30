@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+
+    <!-- Minecraft-style font import -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video autoplay loop muted id="background-video">
+        <source src="c.mp4" type="video/mp4">
+    </video>
+
+    <!-- Rain Sound -->
+    <audio id="rain-sound" loop>
+        <source src="rain-sound.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Countdown Section -->
+    <div id="countdown-section">
+        <div id="countdown"></div>
+    </div>
+
+    <!-- Happy New Year Text -->
+    <h1 id="happy-new-year" class="twinkle" style="display: none;">Happy New Year!</h1>
+
+    <!-- Minecraft Block -->
+    <div id="minecraft-block" class="minecraft-block" style="display: none;" onclick="showNote()"></div>
+
+    <!-- Note -->
+    <div id="note" class="note" style="display: none;">
+        <p>ShuShuu, I'm so glad we met and grateful for the time we've had so far, every moment with you is a perfect block in my world. You mean so much to me and I love you very much. Here’s to crafting another amazing year with you <3</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
