@@ -1,0 +1,88 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Minecraft', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+/* Countdown Section */
+#countdown-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;     /* Make it full width */
+    height: 100vh;    /* Make it full height */
+    background-color: black;
+    color: white;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 5rem;
+}
+/* Background video */
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Pixelated text styles with fade-in */
+.twinkle {
+    font-size: 5rem;
+    text-align: center;
+    color: #f3e900;
+    animation: twinkle 1.5s infinite alternate, fadeIn 2s ease-out forwards;
+    font-family: 'Press Start 2P', cursive; /* Pixelated font */
+}
+
+/* Block */
+.minecraft-block {
+    width: 100px;
+    height: 100px;
+    background-image: url('minecraft-block.png');
+    background-size: cover;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Note (hidden initially) */
+.note {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+}
+
+/* Twinkle animation */
+@keyframes twinkle {
+    0% {
+        color: #f3e900;
+    }
+    50% {
+        color: #ffffff;
+    }
+    100% {
+        color: #ff00ff;
+    }
+}
